@@ -1,5 +1,12 @@
 const path = require("path");
-const { readFile, writeFile, copyFile, unlink, rmdir } = require("fs").promises;
+const {
+  readFile,
+  writeFile,
+  copyFile,
+  unlink,
+  rmdir,
+  readdir,
+} = require("fs").promises;
 
 const Parcel = require("parcel-bundler");
 
@@ -11,17 +18,18 @@ const PostCSS = require("postcss");
 const MQPacker = require("css-mqpacker");
 
 const sourcePath = path.join(process.cwd(), "src", "pages");
-const pages = ["index", "404"]
-
-const mainBundler = new Parcel(
-  pages.map((p) => path.join(sourcePath, p, `${p}.pug`)),
-  {
-    sourceMaps: false,
-    scopeHoist: true,
-  }
-);
 
 async function build() {
+  const pages = await readdir(sourcePath)
+
+  const mainBundler = new Parcel(
+    pages.map((p) => path.join(sourcePath, p, `${p}.pug`)),
+    {
+      sourceMaps: false,
+      scopeHoist: true,
+    }
+  );
+
   const bundlePages = await mainBundler.bundle();
   const assets = findAssets(bundlePages);
   const cssFiles = assets.filter((item) => item.type === "css");
