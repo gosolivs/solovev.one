@@ -1,6 +1,5 @@
 {
-  "name": "Иван Соловьев – фронтенд разработчик",
-  "short_name": "Ivan Solovev",
+  "name": "{site_name}",
   "background_color": "#fff",
   "theme_color": "#d82a4a",
   "display": "minimal-ui",

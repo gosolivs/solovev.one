@@ -17,6 +17,8 @@ const HTMLNano = require("htmlnano");
 const PostCSS = require("postcss");
 const MQPacker = require("css-mqpacker");
 
+const dataInfo = require("../src/data.json");
+
 const sourcePath = path.join(process.cwd(), "src", "pages");
 
 async function build() {
@@ -80,6 +82,18 @@ async function build() {
 
   for (const cssFile of cssFiles) {
     await unlink(cssFile.name);
+  }
+
+  for (const manifest of assets.filter((i) => i.type === 'webmanifest')) {
+    /**
+     * @type {string}
+     */
+    const content = await readFile(manifest.name, { encoding: "utf-8" });
+
+    await writeFile(
+      manifest.name,
+      content.replace(/{(\w+)}/g, (_, id) => dataInfo[id])
+    )
   }
 }
 
