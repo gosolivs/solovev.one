@@ -1,5 +1,6 @@
 @import url("../../styles/global.css");
 @import url("../../components/section/section.css");
+@import url("../../components/list/list.css");
 @import url("./components/home/home.css");
 @import url("./components/photo/photo.css");
 @import url("./components/contacts/contacts.css");

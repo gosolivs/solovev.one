@@ -1,5 +1,6 @@
 include ../../../../components/section/section
 include ../../../../components/external-link/external-link
+include ../../../../components/list/list
 
 - function md2text (text) {
 -	  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" rel="noopener noreferrer" target="_blank">$1</a>')
@@ -7,9 +8,9 @@ include ../../../../components/external-link/external-link
 
 mixin activity
   +section(activity.title).activity
-    ul.activity__list
+    +list
       each item in activity.list
-        li.activity__item
+        +listItem
           if (typeof item === 'string')
             != md2text(item)
           else
