@@ -48,6 +48,37 @@
     ]
   },
 
+  "speech": {
+    "title": "Публичные выступления",
+    "list": [
+      {
+        "title": "Рисуем Vue.js вместе с Rails",
+        "place": "Online RubyMeetup XIII",
+        "link": "https://www.youtube.com/watch?v=ZfwNoFaGetQ"
+      },
+      {
+        "title": "Как полюбить Snowpack",
+        "place": "Frontend Evrone meetup",
+        "link": "https://www.youtube.com/watch?v=McR7Tb2EJOo"
+      },
+      {
+        "title": "Боль fullstack-разработчика",
+        "place": "Moscow Python Podcast",
+        "link": "https://www.youtube.com/watch?v=DLgsB1yBeJQ"
+      },
+      {
+        "title": "Открытая дискуссия по архитектуре",
+        "place": "Frontend Live 2020",
+        "link": "https://www.youtube.com/watch?v=0AxCqZUvOyg"
+      },
+      {
+        "title": "Чем болеют большие фронтенды: монорепы и микрофронтенды",
+        "place": "Frontend Live 2020",
+        "link": "https://www.youtube.com/watch?v=P0UJ-nrSi34"
+      }
+    ]
+  },
+
   "not_found": {
     "page_name": "Нет такой страницы",
     "title": "Такой страницы не существует",

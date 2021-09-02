@@ -1,0 +1,10 @@
+include ../../../../components/section/section
+include ../../../../components/list/list
+
+mixin speech
+  +section(speech.title).speech
+    +list
+      each item in speech.list
+        +listItem.speech__item
+          a(href=item.link)= item.title
+          .speech__place= item.place
