@@ -1,5 +1,5 @@
 const path = require("path");
-const { readFile, writeFile, copyFile, unlink } = require("fs").promises;
+const { readFile, writeFile, copyFile, unlink, rmdir } = require("fs").promises;
 
 const Parcel = require("parcel-bundler");
 
@@ -10,10 +10,11 @@ const HTMLNano = require("htmlnano");
 const PostCSS = require("postcss");
 const MQPacker = require("css-mqpacker");
 
-const sourcePath = path.join(process.cwd(), "src");
+const sourcePath = path.join(process.cwd(), "src", "pages");
+const pages = ["index", "404"]
 
 const mainBundler = new Parcel(
-  [path.join(sourcePath, "index.pug"), path.join(sourcePath, "404.pug")],
+  pages.map((p) => path.join(sourcePath, p, `${p}.pug`)),
   {
     sourceMaps: false,
     scopeHoist: true,
@@ -59,7 +60,12 @@ async function build() {
       .use(HTMLNano({ removeUnusedCss: {} }))
       .process(html);
 
-    await writeFile(item.name, result.html);
+    await writeFile(
+      path.join(path.dirname(item.name), "..", path.basename(item.name)),
+      result.html
+    );
+
+    await rmdir(path.dirname(item.name), { recursive: true, force: true });
   }
 
   await copyFile("./src/icons/favicon.ico", "./dist/favicon.ico");

@@ -1,0 +1,6 @@
+mixin photo
+  .photo
+    picture
+      source(srcset="./components/photo/photo.avif" type="image/avif")
+      source(srcset="./components/photo/photo.webp" type="image/webp")
+      img.photo__image(src="./components/photo/photo.jpg" alt=photo itemprop="image")
