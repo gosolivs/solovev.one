@@ -59,7 +59,7 @@ async function build() {
     /**
      * @type {string}
      */
-    const html = await readFile(item.name).then((i) => i.toString());
+    const html = await readFile(item.name, { encoding: "utf-8" });
 
     /**
      * @type {PostHTML.Result<unknown>}
@@ -93,7 +93,7 @@ async function build() {
     await writeFile(
       manifest.name,
       content.replace(/{(\w+)}/g, (_, id) => dataInfo[id])
-    )
+    );
   }
 }
 
