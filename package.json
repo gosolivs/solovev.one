@@ -48,6 +48,8 @@
   },
   "yaspeller": {
     "ignoreCapitalization": true,
+    "ignoreRomanNumerals": true,
+    "ignoreUrls": true,
     "dictionary": [
       "опенсорс",
       "фронтенд",
@@ -60,7 +62,17 @@
       "Evr",
       "ne",
       "evrone",
-      "фрилансером"
+      "фрилансером",
+      "vue",
+      "js",
+      ".*(m|M)eetup",
+      "snowpack",
+      "frontend",
+      "фронтенды",
+      "Podcast",
+      "fullstack",
+      "монорепы",
+      "микрофронтенды"
     ]
   },
   "stylelint": {
