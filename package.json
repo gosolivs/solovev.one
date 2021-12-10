@@ -88,8 +88,5 @@
     "node": "^16.13.0",
     "npm": "^8.1.0",
     "yarn": "please use npm!"
-  },
-  "dependencies": {
-    "components": "^0.1.0"
   }
 }
