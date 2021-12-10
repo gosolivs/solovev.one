@@ -3,6 +3,9 @@ mixin head(cssFile, title)
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover")
     meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'none';style-src 'self';object-src 'none';block-all-mixed-content;upgrade-insecure-requests")
+    meta(http-equiv="X-Frame-Options" content="DENY")
+    meta(name="referrer" content="origin")
 
     link(rel="stylesheet" href=`./${cssFile}.css`)
     title= title ? `${title}. ${site_name}` : site_name
