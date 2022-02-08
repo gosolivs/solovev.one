@@ -98,7 +98,7 @@ async function build() {
     );
   }
 
-  await cp("public", destDir, { recursive: true });
+  await cp("public", destDir, { recursive: true, force: true });
 }
 
 build().catch((error) => {
