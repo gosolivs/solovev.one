@@ -6,6 +6,7 @@ const {
   unlink,
   rmdir,
   readdir,
+  cp,
 } = require("fs").promises;
 
 const Parcel = require("parcel-bundler");
@@ -20,6 +21,7 @@ const MQPacker = require("css-mqpacker");
 const dataInfo = require("../src/data.json");
 
 const sourcePath = path.join(process.cwd(), "src", "pages");
+const destDir = "dist";
 
 async function build() {
   const pages = await readdir(sourcePath)
@@ -78,7 +80,7 @@ async function build() {
     await rmdir(path.dirname(item.name), { recursive: true, force: true });
   }
 
-  await copyFile("./src/icons/favicon.ico", "./dist/favicon.ico");
+  await copyFile("./src/icons/favicon.ico", `./${destDir}/favicon.ico`);
 
   for (const cssFile of cssFiles) {
     await unlink(cssFile.name);
@@ -95,6 +97,8 @@ async function build() {
       content.replace(/{(\w+)}/g, (_, id) => dataInfo[id])
     );
   }
+
+  await cp("public", destDir, { recursive: true });
 }
 
 build().catch((error) => {
