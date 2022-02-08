@@ -4,7 +4,7 @@ const {
   writeFile,
   copyFile,
   unlink,
-  rmdir,
+  rm,
   readdir,
   cp,
 } = require("fs").promises;
@@ -77,7 +77,7 @@ async function build() {
       result.html
     );
 
-    await rmdir(path.dirname(item.name), { recursive: true, force: true });
+    await rm(path.dirname(item.name), { recursive: true, force: true });
   }
 
   await copyFile("./src/icons/favicon.ico", `./${destDir}/favicon.ico`);
