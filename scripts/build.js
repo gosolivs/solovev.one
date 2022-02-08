@@ -6,8 +6,8 @@ const {
   unlink,
   rm,
   readdir,
-  cp,
 } = require("fs").promises;
+const { execSync } = require("child_process")
 
 const Parcel = require("parcel-bundler");
 
@@ -98,7 +98,7 @@ async function build() {
     );
   }
 
-  await cp("public", destDir, { recursive: true, force: true });
+  await execSync(`cp -Rf public/ ${destDir}`);
 }
 
 build().catch((error) => {
