@@ -1,12 +1,12 @@
 {
-  "site_name": "Иван Соловьев – Team leader",
-  "description": "Team leader умеющий сделать хорошо",
+  "site_name": "Иван Соловьев – Solutions Architect",
+  "description": "Solutions Architect умеющий сделать хорошо",
   "keywords": ["gosolivs"],
   "twitter": "@gosolivs",
 
   "name": "Иван",
   "last_name": "Соловьев",
-  "specialty": "Team leader",
+  "specialty": "Solutions Architect",
   "photo": "Красивый я",
 
   "about": {
@@ -21,6 +21,11 @@
   "contacts": {
     "title": "Найти меня можно здесь",
     "list": [
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/gosolivs/",
+        "type": "sameAs"
+      },
       {
         "name": "Telegram",
         "link": "http://t.me/gosolivs",
@@ -42,8 +47,10 @@
   "activity": {
     "title": "Активность",
     "list": [
+      "Проектирую архитектурные решения и помогаю их внедрять в [Evr<span style='color:red'>o</span>ne](https://evrone.com)",
       "Управляю командой в [Evr<span style='color:red'>o</span>ne](https://evrone.com)",
-      "Иногда ломаю [опенсорс](https://github.com/gosolivs)",
+      "Делаю подкаст [Немного IT](https://someit.tech)",
+      "Раньше ломал [опенсорс](https://github.com/gosolivs)",
       "Более 7 лет был фрилансером"
     ]
   },
