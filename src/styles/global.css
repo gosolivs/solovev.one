@@ -4,9 +4,10 @@
   --text-color: #222;
   --brand-text-color: #fff;
   --brand-color: #d82a4a;
+  --secondary-brand-color: #24374f;
 
   /* Sizes */
-  --base-line-height: 26px;
+  --base-line-height: 1rem;
   --section-bottom-offset: calc(1 * var(--base-line-height));
 
   /* Times */
