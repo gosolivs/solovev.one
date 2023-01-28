@@ -2,7 +2,6 @@ const path = require("path");
 const {
   readFile,
   writeFile,
-  copyFile,
   unlink,
   rm,
   readdir,
@@ -79,8 +78,6 @@ async function build() {
 
     await rm(path.dirname(item.name), { recursive: true, force: true });
   }
-
-  await copyFile("./src/icons/favicon.ico", `./${destDir}/favicon.ico`);
 
   for (const cssFile of cssFiles) {
     await unlink(cssFile.name);
