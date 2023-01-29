@@ -5,24 +5,10 @@
   "display": "minimal-ui",
   "icons": [
     {
-      "src": "./icons/192.png",
-      "sizes": "36x36 48x48 72x72 96x96 144x144 192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "./icons/256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "./icons/512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "./icons/icon.png",
-      "sizes": "1024x1024",
-      "type": "image/png"
+      "src": "./icon/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "72x72 96x96 128x128 256x256 512x512",
+      "purpose": "any maskable"
     }
   ]
 }
