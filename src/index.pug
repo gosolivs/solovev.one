@@ -1,22 +1,29 @@
-mixin head(cssFile, title)
+include components/footer/footer
+
+include components/home/home
+
+doctype html
+html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover")
     meta(http-equiv="x-ua-compatible" content="ie=edge")
-    meta(name="referrer" content="origin")
 
-    link(rel="stylesheet" href=`./${cssFile}.css`)
-    title= title ? `${title}. ${site_name}` : site_name
+    link(rel="stylesheet" href=`./styles/index.css`)
+
+    title= site_name
     meta(name="description" content=description)
     meta(name="keywords" content=keywords.join(', '))
 
-    link(rel="mask-icon" href="../../icons/logo.svg" color="#d82a4a")
-    link(rel="icon" type="image/png" sizes="192x192" href="../../icons/192.png")
-    link(rel="manifest" href="../../manifest.webmanifest")
+    link(rel="mask-icon" href="./icons/logo.svg" color="#d82a4a")
+    link(rel="icon" type="image/png" sizes="192x192" href="./icons/192.png")
+    link(rel="manifest" href="./manifest.json")
     meta(name="theme-color" content="#d82a4a")
 
     meta(name="twitter:creator" content=twitter)
     meta(property="og:locale" content="ru_RU")
     meta(property="og:type" content="website")
 
-    block
+  body
+    +home
+    +footer

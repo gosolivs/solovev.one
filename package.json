@@ -2,22 +2,17 @@
   "name": "solovev.one",
   "private": true,
   "scripts": {
-    "start": "parcel serve src/pages/index/index.pug",
-    "start:pages": "parcel serve src/pages/**/*.pug",
-    "build": "NODE_ENV=production node ./scripts/build.js",
+    "start": "parcel serve src/index.pug",
+    "build": "parcel build --no-source-maps --no-cache --no-autoinstall --dist-dir ${OUTPUT_DIR} src/index.pug",
     "lint:styles": "stylelint src/**/*.css",
     "spell": "yaspeller src/data.json"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "css-mqpacker": "^7.0.0",
-    "htmlnano": "^0.2.8",
-    "parcel-bundler": "^1.12.4",
-    "postcss": "^7.0.35",
-    "postcss-pxtorem": "^5.1.1",
-    "posthtml": "^0.12.3",
-    "posthtml-minify-classnames": "^0.2.3",
-    "pug": "^3.0.2",
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-pug": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "parcel": "^2.6.2",
+    "postcss-pxtorem": "^6.0.0",
     "stylelint": "^13.12.0",
     "stylelint-config-recess-order": "^2.3.0",
     "stylelint-config-standard": "^21.0.0",
@@ -42,8 +37,7 @@
           "margin",
           "padding"
         ]
-      },
-      "autoprefixer": {}
+      }
     }
   },
   "yaspeller": {
@@ -84,10 +78,5 @@
     "rules": {
       "block-no-empty": null
     }
-  },
-  "engines": {
-    "node": "^16.13.0",
-    "npm": "^8.1.0",
-    "yarn": "please use npm!"
   }
 }

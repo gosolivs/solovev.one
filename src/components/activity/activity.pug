@@ -1,6 +1,5 @@
-include ../../../../components/section/section
-include ../../../../components/external-link/external-link
-include ../../../../components/list/list
+include ../section/section
+include ../list/list
 
 - function md2text (text) {
 -	  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" rel="noopener noreferrer" target="_blank">$1</a>')

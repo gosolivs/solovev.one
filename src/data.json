@@ -23,23 +23,19 @@
     "list": [
       {
         "name": "LinkedIn",
-        "link": "https://www.linkedin.com/in/gosolivs/",
-        "type": "sameAs"
+        "link": "https://www.linkedin.com/in/gosolivs/"
       },
       {
         "name": "Telegram",
-        "link": "http://t.me/gosolivs",
-        "type": "sameAs"
+        "link": "http://t.me/gosolivs"
       },
       {
         "name": "ivan@solovev.one",
-        "link": "mailto:ivan@solovev.one",
-        "type": "email"
+        "link": "mailto:ivan@solovev.one"
       },
       {
         "name": "GitHub",
-        "link": "https://github.com/gosolivs",
-        "type": "sameAs"
+        "link": "https://github.com/gosolivs"
       }
     ]
   },
@@ -84,11 +80,5 @@
         "link": "https://www.youtube.com/watch?v=P0UJ-nrSi34"
       }
     ]
-  },
-
-  "not_found": {
-    "page_name": "Нет такой страницы",
-    "title": "Такой страницы не существует",
-    "link": "На главную"
   }
 }

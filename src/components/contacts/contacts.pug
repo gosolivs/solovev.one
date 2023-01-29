@@ -1,4 +1,4 @@
-include ../../../../components/section/section
+include ../section/section
 
 mixin contacts
   +section(contacts.title).contacts
@@ -6,4 +6,4 @@ mixin contacts
       each contact, index in contacts.list
         if index > 0
           != ", "
-        +external-link(contact.link)(itemprop=contact.type)= contact.name
+        a(href=contact.link rel="noopener noreferrer" target="_blank")= contact.name
