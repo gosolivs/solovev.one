@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 600px;
   min-height: 100vh;
-  padding: 25px;
+  padding: 1.5rem;
   margin: 0 auto;
   background: var(--background-color);
 }
@@ -22,7 +22,7 @@
 .home__title {
   padding: 0;
   margin: 0 0 0.25rem;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 600;
   line-height: 1;
   color: var(--secondary-brand-color);
@@ -31,7 +31,7 @@
 
 .home__specialty {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0.375rem 0.75rem;
   margin: 0;
   font-weight: 400;
   color: var(--brand-text-color);
@@ -56,6 +56,6 @@
 
 @media (max-width: 500px) {
   .home {
-    padding: var(--base-line-height);
+    padding: var(--base-size);
   }
 }

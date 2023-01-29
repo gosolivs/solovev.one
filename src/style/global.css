@@ -7,8 +7,8 @@
   --secondary-brand-color: #24374f;
 
   /* Sizes */
-  --base-line-height: 1rem;
-  --section-bottom-offset: calc(1 * var(--base-line-height));
+  --base-size: 1rem;
+  --section-bottom-offset: calc(1 * var(--base-size));
 
   /* Times */
   --transition: 0.25s;

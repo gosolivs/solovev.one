@@ -2,7 +2,7 @@
   position: relative;
   width: 250px;
   height: 250px;
-  margin: 0 auto var(--base-line-height);
+  margin: 0 auto var(--base-size);
   overflow: hidden;
 }
 
@@ -35,7 +35,7 @@
   .photo {
     width: 150px;
     height: 150px;
-    margin: 0 auto calc(var(--base-line-height) / 2);
+    margin: 0 auto calc(var(--base-size) / 2);
   }
 }
 
