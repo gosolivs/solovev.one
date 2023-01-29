@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm ci
       - name: Build
-        run: npm run build
+        run: make
       - name: Deploy
         uses: burnett01/rsync-deployments@5.2
         with:

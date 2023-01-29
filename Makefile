@@ -3,7 +3,7 @@ OUTPUT_DIR = dist
 
 .PHONY: build-src
 build-src:
-	npm ci && npm run build
+	npm run build
 
 .PHONY: build-public-files
 build-public-files:
