@@ -1,6 +1,5 @@
 include ../photo/photo
 include ../contacts/contacts
-include ../activity/activity
 include ../about/about
 include ../speech/speech
 
@@ -16,7 +15,6 @@ mixin home()
           span(itemprop="familyName")= last_name
         h2.home__specialty(itemprop="jobTitle")= specialty
 
-      +contacts
-      +activity
-      +speech
       +about
+      +contacts
+      +speech

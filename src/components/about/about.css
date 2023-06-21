@@ -1,4 +1,6 @@
-.about {}
+.about {
+  margin: 0 0 var(--section-bottom-offset);
+}
 
 .about__text {}
 

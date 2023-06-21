@@ -1,8 +1,8 @@
-include ../section/section
 include ../list/list
 
 mixin speech
-  +section(speech.title).speech
+  section.speech
+    h3.speech__title= speech.title
     +list
       each item in speech.list
         +listItem.speech__item

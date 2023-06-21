@@ -1,25 +1,21 @@
 {
-  "site_name": "Иван Соловьев – Solutions Architect",
+  "site_name": "Иван Соловьев – Архитектор решений",
   "description": "Solutions Architect умеющий сделать хорошо",
-  "keywords": ["gosolivs"],
+  "keywords": ["gosolivs", "Solutions Architect"],
   "twitter": "@gosolivs",
 
   "name": "Иван",
   "last_name": "Соловьев",
-  "specialty": "Solutions Architect",
+  "specialty": "Архитектор решений",
   "photo": "Красивый я",
 
   "about": {
-    "title": "Коротко обо мне",
     "text": [
-      "Я работаю, самообучаюсь и экспериментирую каждый день, чтобы стать лучшим в своей сфере.",
-      "Помимо этого, для разнообразия, изучаю различные языки программирования, новые подходы к управлению проектами и людьми.",
-      "По моему мнению, программы – это инструмент. И наибольшее значение имеют люди, использующие их, и опыт, получаемый при этом."
+      "Я - творческий профессионал: воплощаю архитектурные решения и управляю командой в <a href='https://www.kfc.ru/' target='_blank'>KFC Russia</a> и <a href='https://evrone.com/' target='_blank'>Evrone</a>, веду подкаст «<a href='https://someit.tech/' target='_blank'>Немного IT</a>», участвовал в развитии опенсорс и работал фрилансером 7 лет. Постоянно самосовершенствуюсь и решаю проблемы заказчиков лучше всех в мире."
     ]
   },
 
   "contacts": {
-    "title": "Найти меня можно здесь",
     "list": [
       {
         "name": "LinkedIn",
@@ -40,19 +36,8 @@
     ]
   },
 
-  "activity": {
-    "title": "Активность",
-    "list": [
-      "Проектирую и внедряю архитектурные решения [Evrone](https://evrone.com)",
-      "Делаю подкаст [Немного IT](https://someit.tech)",
-      "Управляю командой в [Evrone](https://evrone.com)",
-      "Ломал [опенсорс](https://github.com/gosolivs)",
-      "Более 7 лет был фрилансером"
-    ]
-  },
-
   "speech": {
-    "title": "Публичные выступления",
+    "title": "Развитие сообщества",
     "list": [
       {
         "title": "Рисуем Vue.js вместе с Rails",
@@ -78,6 +63,16 @@
         "title": "Чем болеют большие фронтенды: монорепы и микрофронтенды",
         "place": "Frontend Live 2020",
         "link": "https://www.youtube.com/watch?v=P0UJ-nrSi34"
+      },
+      {
+        "title": "Карусель на Vanilla.JS. Часть 2",
+        "place": "Хабр",
+        "link": "https://habr.com/ru/articles/327690/"
+      },
+      {
+        "title": "Карусель на Vanilla.JS",
+        "place": "Хабр",
+        "link": "https://habr.com/ru/articles/327246/"
       }
     ]
   }

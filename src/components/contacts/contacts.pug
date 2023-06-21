@@ -1,7 +1,5 @@
-include ../section/section
-
 mixin contacts
-  +section(contacts.title).contacts
+  section.contacts
     div
       each contact, index in contacts.list
         if index > 0
