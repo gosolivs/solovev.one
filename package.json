@@ -28,6 +28,8 @@
     "ignoreRomanNumerals": true,
     "ignoreUrls": true,
     "dictionary": [
+      "KFC",
+      "Хабр",
       "LinkedIn",
       "опенсорс",
       "фронтенд",
