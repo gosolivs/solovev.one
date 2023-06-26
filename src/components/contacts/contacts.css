@@ -1,1 +1,6 @@
 .contacts {}
+
+.contacts__space {
+  display: inline-block;
+  width: 2ex;
+}
