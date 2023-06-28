@@ -1,7 +1,6 @@
 mixin contacts
   section.contacts
-    div
-      each contact, index in contacts.list
-        if index > 0
-          span.contacts__space
-        a(href=contact.link rel="noopener noreferrer" target="_blank")= contact.name
+    each contact, index in contacts
+      if index > 0
+        span.contacts__space
+      a.contacts__link(href=contact.link rel="noopener noreferrer" target="_blank")= contact.name

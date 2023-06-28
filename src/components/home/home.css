@@ -1,61 +1,115 @@
 .home {
   box-sizing: border-box;
   width: 100%;
-  max-width: 840px;
-  min-height: 100vh;
-  padding: 1.5rem;
+  max-width: var(--content-width);
+  padding: 3rem;
   margin: 0 auto;
   background: var(--background-color);
 }
 
-.home__wrap {
+.home__content {
+  position: relative;
+  z-index: 1;
   box-sizing: border-box;
+  max-width: calc(var(--content-width) / 3 * 2);
   padding: var(--wrap-top, 0) var(--wrap-right, 0) var(--wrap-bottom, 0) var(--wrap-left, 0);
-}
-
-.home__header {
-  margin: 0 0 calc(2 * var(--section-bottom-offset));
-  line-height: 1;
-  text-align: center;
 }
 
 .home__title {
   padding: 0;
-  margin: 0 0 0.25rem;
-  font-size: 3.125rem;
+  margin: 0 0 0.125em;
+  font-size: 3.735rem;
   font-weight: 600;
-  line-height: 1;
   color: var(--text-color);
   opacity: 0.99;
 }
 
 .home__specialty {
-  display: inline-block;
-  padding: 0.375rem 0.75rem;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 0.125em;
+  font-size: 1.75rem;
   font-weight: 400;
-  color: var(--brand-text-color);
-  background: var(--brand-color);
 }
 
-@media (max-width: 900px) {
-  .home {
-    max-width: 60%;
+.home__about {
+}
+
+.home__photo {
+  position: fixed;
+  bottom: -40px;
+  left: 45vw;
+  width: calc(var(--content-width) / 3 * 2);
+}
+
+@media (max-height: 750px) {
+  .home__content {
+    width: 65%;
+  }
+
+  .home__photo {
+    bottom: 0;
+    transform: translateY(10%);
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
+  .home__content {
+    max-width: 75%;
+  }
+
+  .home__photo {
+    right: 0;
+    left: auto;
+    width: 75vw;
+    transform: translateX(20%);
+  }
+}
+
+@media (max-width: 700px) {
   .home {
     max-width: none;
   }
 
   .home__title {
-    font-size: calc(35px + 2vw);
+    font-size: 2.5rem;
+  }
+
+  .home__specialty {
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home {
-    padding: var(--base-size);
+    padding: 2rem;
+  }
+
+  .home__content {
+    width: auto;
+    max-width: none;
+    margin: 1rem 0 0;
+  }
+
+  .home__photo {
+    position: static;
+    width: 100%;
+    border-bottom: 1px solid;
+    transform: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__title {
+    font-size: 2.25rem;
+  }
+
+  .home__specialty {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .home__photo {
+    border-bottom: none;
   }
 }

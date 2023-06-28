@@ -1,17 +1,51 @@
 .speech {
-  margin-top: calc(3 * var(--section-bottom-offset));
+  width: 80%;
+  margin-top: calc(2 * var(--base-size));
 }
 
 .speech__title {
   padding: 0;
-  margin: 1.5em 0 0.25em;
-  font-size: 1.375rem;
+  margin: 0 0 0.125em;
+  font-size: 1.75rem;
   font-weight: 400;
-  line-height: 1.1;
+}
+
+.speech__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.speech__item {
+  position: relative;
+  margin: 0 0 0.75em;
+}
+
+.speech__item::before {
+  position: absolute;
+  top: 0.8em;
+  left: -2ex;
+  display: block;
+  width: 1ex;
+  height: 1px;
+  content: '';
+  background: var(--text-color);
 }
 
 .speech__place {
-  margin: -0.25em 0 0;
+  margin: 0;
   font-size: 0.75em;
   color: var(--text-color);
+}
+
+@media (max-width: 700px) {
+  .speech__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .speech {
+    width: auto;
+  }
 }

@@ -1,4 +1,6 @@
-.contacts {}
+.contacts {
+  margin-top: 1em;
+}
 
 .contacts__space {
   display: inline-block;

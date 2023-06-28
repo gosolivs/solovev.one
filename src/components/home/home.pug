@@ -1,20 +1,16 @@
 include ../photo/photo
 include ../contacts/contacts
-include ../about/about
 include ../speech/speech
 
-mixin home()
+mixin home
   main.home(itemscope itemtype="http://schema.org/Person")
-    .home__wrap
-      +photo
+    +photo.home__photo
 
-      .home__header
-        h1.home__title
-          span(itemprop="name")= name
-          =" "
-          span(itemprop="familyName")= last_name
-        h2.home__specialty(itemprop="jobTitle")= specialty
+    .home__content
+      h1.home__title= title
+      h2.home__specialty(itemprop="jobTitle")= specialty
 
-      +about
+      section.home__about(itemprop="knowsAbout")!= about
+
       +contacts
       +speech

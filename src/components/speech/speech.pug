@@ -1,10 +1,11 @@
-include ../list/list
-
 mixin speech
   section.speech
     h3.speech__title= speech.title
-    +list
+
+    ol.speech__list
       each item in speech.list
-        +listItem.speech__item
-          a(href=item.link)= item.title
-          .speech__place= item.place
+        .speech__item
+          if item.place
+            a(href=item.link)= `${item.title}, ${item.place}`
+          else
+            a(href=item.link)= item.title

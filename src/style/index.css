@@ -1,7 +1,5 @@
 @import url("./global.css");
-@import url("../components/about/about.css");
-@import url("../components/contacts/contacts.css");
 @import url("../components/home/home.css");
-@import url("../components/list/list.css");
 @import url("../components/photo/photo.css");
+@import url("../components/contacts/contacts.css");
 @import url("../components/speech/speech.css");

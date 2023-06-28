@@ -1,0 +1,52 @@
+---
+site_name: Иван Соловьев — Архитектор решений
+description: Solutions Architect умеющий сделать хорошо
+keywords:
+  - gosolivs
+  - Solutions Architect
+
+twitter: "@gosolivs"
+title: Иван Соловьев
+specialty: Архитектор решений
+photo: Красивый я
+
+about: >
+  Я — творческий профессионал: воплощаю архитектурные решения
+  и управляю командой в KFC Russia и Evrone, веду подкаст «Немного IT»,
+  участвовал в развитии опенсорс и работал фрилансером 7 лет.
+  Постоянно самосовершенствуюсь и решаю проблемы заказчиков лучше всех в мире.
+
+contacts:
+  - name: LinkedIn
+    link: https://www.linkedin.com/in/gosolivs/
+  - name: Telegram
+    link: http://t.me/gosolivs
+  - name: GitHub
+    link: https://github.com/gosolivs
+
+speech:
+  title: Развитие сообщества
+  list:
+    - title: Подкаст «Немного IT»
+      link: https://someit.ru
+    - title: Рисуем Vue.js вместе с Rails
+      place: Online RubyMeetup XIII
+      link: https://www.youtube.com/watch?v=ZfwNoFaGetQ
+    - title: Как полюбить Snowpack
+      place: Frontend Evrone meetup
+      link: https://www.youtube.com/watch?v=McR7Tb2EJOo
+    - title: Боль fullstack-разработчика
+      place: Moscow Python Podcast
+      link: https://www.youtube.com/watch?v=DLgsB1yBeJQ
+    - title: Открытая дискуссия по архитектуре
+      place: Frontend Live 2020
+      link: https://www.youtube.com/watch?v=0AxCqZUvOyg
+    - title: 'Чем болеют большие фронтенды: монорепы и микрофронтенды'
+      place: Frontend Live 2020
+      link: https://www.youtube.com/watch?v=P0UJ-nrSi34
+    - title: Карусель на Vanilla.JS. Часть 2
+      place: Хабр
+      link: https://habr.com/ru/articles/327690/
+    - title: Карусель на Vanilla.JS
+      place: Хабр
+      link: https://habr.com/ru/articles/327246/
