@@ -53,6 +53,7 @@ img {
 }
 
 a {
+  position: relative;
   color: var(--brand-color);
   text-decoration: none;
   cursor: pointer;
