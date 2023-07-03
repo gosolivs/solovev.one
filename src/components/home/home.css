@@ -93,7 +93,7 @@
   .home__photo {
     position: static;
     width: 100%;
-    border-bottom: 1px solid;
+    border-bottom: 0.9px solid;
     transform: none;
   }
 }

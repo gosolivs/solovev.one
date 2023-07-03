@@ -17,19 +17,7 @@
 }
 
 .speech__item {
-  position: relative;
   margin: 0 0 0.75em;
-}
-
-.speech__item::before {
-  position: absolute;
-  top: 0.8em;
-  left: -2ex;
-  display: block;
-  width: 1ex;
-  height: 1px;
-  content: '';
-  background: var(--text-color);
 }
 
 .speech__place {
