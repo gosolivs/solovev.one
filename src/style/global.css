@@ -3,7 +3,8 @@
   --background-color: #fff;
   --text-color: #222;
   --brand-text-color: #fff;
-  --brand-color: #274068;
+  --brand-color-rgb: 39, 64, 104;
+  --brand-color: rgb(var(--brand-color-rgb));
 
   /* Sizes */
   --base-size: 1rem;
@@ -57,7 +58,7 @@ a {
   color: var(--brand-color);
   text-decoration: none;
   cursor: pointer;
-  border-bottom: 0.9px solid currentColor;
+  border-bottom: 1px solid rgba(var(--brand-color-rgb), 0.3);
   outline: none;
   transition: var(--transition);
   transform-origin: 0 50%;
