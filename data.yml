@@ -27,6 +27,8 @@ contacts:
 speech:
   title: Развитие сообщества
   list:
+    - title: Подкаст «Около IT»
+      link: http://by-it.ru/
     - title: Подкаст «Немного IT»
       link: https://someit.ru
     - title: Рисуем Vue.js вместе с Rails
