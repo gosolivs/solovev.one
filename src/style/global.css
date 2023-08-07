@@ -104,7 +104,6 @@ svg {
   }
 }
 
-/* TODO: Исправить фотку с белым фоном
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #222;
@@ -112,4 +111,3 @@ svg {
     --brand-color: #7396cf;
   }
 }
- */

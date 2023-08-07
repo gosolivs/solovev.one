@@ -1,6 +1,7 @@
 mixin photo
   .photo&attributes(attributes)
     picture
-      source(srcset="./components/photo/photo_900.webp, ./components/photo/photo_1800.webp 2x" type="image/avif")
-      source(srcset="./components/photo/photo_900.webp, ./components/photo/photo_1800.webp 2x" type="image/webp")
+      source(srcset="./components/photo/photo_900_black.avif, ./components/photo/photo_1800_black.avif 2x" type="image/avif" media="(prefers-color-scheme: dark)")
+      source(srcset="./components/photo/photo_900.avif, ./components/photo/photo_1800.avif 2x" type="image/avif")
+      source(srcset="./components/photo/photo_900_black.jpg, ./components/photo/photo_1800_black.jpg 2x" media="(prefers-color-scheme: dark)")
       img.photo__image(src="./components/photo/photo_900.jpg" srcset="./components/photo/photo_900.jpg, ./components/photo/photo_1800.jpg 2x" alt=photo itemprop="image")
