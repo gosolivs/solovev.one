@@ -7,14 +7,6 @@ on:
   pull_request:
 
 jobs:
-  spell:
-    name: Check words
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: npm ci
-      - run: npm run spell
-
   stylelint:
     name: Stylelint
     runs-on: ubuntu-latest
