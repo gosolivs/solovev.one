@@ -18,6 +18,7 @@
 
 .speech__item {
   margin: 0 0 0.75em;
+  text-wrap: balance;
 }
 
 .speech__place {
