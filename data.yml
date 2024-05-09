@@ -22,6 +22,8 @@ contacts:
     link: https://www.linkedin.com/in/gosolivs/
   - name: Хабр Карьера
     link: https://career.habr.com/gosolivs
+  - name: Хабр
+    link: https://habr.com/ru/users/gosolivs/
   - name: Telegram
     link: http://t.me/gosolivs
   - name: GitHub
@@ -30,10 +32,10 @@ contacts:
 speech:
   title: Развитие сообщества
   list:
-    - title: Подкаст «Около IT»
-      link: http://by-it.ru/
     - title: Подкаст «Немного IT»
       link: https://someit.ru
+    - title: Подкаст «Около IT»
+      link: http://by-it.ru/
     - title: Рисуем Vue.js вместе с Rails
       place: Online RubyMeetup XIII
       link: https://www.youtube.com/watch?v=ZfwNoFaGetQ
