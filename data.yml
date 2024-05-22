@@ -34,8 +34,9 @@ speech:
   list:
     - title: Подкаст «Немного IT»
       link: https://someit.ru
-    - title: Подкаст «Около IT»
-      link: http://by-it.ru/
+    - title: Есть ли Go после Python?
+      place: OR подкаст
+      link: https://youtu.be/1DSy97KY730
     - title: Рисуем Vue.js вместе с Rails
       place: Online RubyMeetup XIII
       link: https://www.youtube.com/watch?v=ZfwNoFaGetQ
@@ -57,3 +58,5 @@ speech:
     - title: Карусель на Vanilla.JS
       place: Хабр
       link: https://habr.com/ru/articles/327246/
+    - title: Подкаст «Около IT»
+      link: http://by-it.ru/
