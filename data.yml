@@ -25,7 +25,7 @@ contacts:
   - name: Хабр
     link: https://habr.com/ru/users/gosolivs/
   - name: Telegram
-    link: http://t.me/gosolivs
+    link: https://t.me/gosolivs
   - name: GitHub
     link: https://github.com/gosolivs
 
@@ -59,4 +59,4 @@ speech:
       place: Хабр
       link: https://habr.com/ru/articles/327246/
     - title: Подкаст «Около IT»
-      link: http://by-it.ru/
+      link: https://www.youtube.com/@by-it
