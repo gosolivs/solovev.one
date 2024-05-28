@@ -33,25 +33,25 @@ speech:
   title: Развитие сообщества
   list:
     - title: Подкаст «Немного IT»
-      link: https://someit.ru
+      link: https://www.youtube.com/@someit
     - title: Есть ли Go после Python?
       place: OR подкаст
       link: https://youtu.be/1DSy97KY730
     - title: Рисуем Vue.js вместе с Rails
       place: Online RubyMeetup XIII
-      link: https://www.youtube.com/watch?v=ZfwNoFaGetQ
+      link: https://youtu.be/ZfwNoFaGetQ
     - title: Как полюбить Snowpack
       place: Frontend Evrone meetup
-      link: https://www.youtube.com/watch?v=McR7Tb2EJOo
+      link: https://youtu.be/McR7Tb2EJOo
     - title: Боль fullstack-разработчика
       place: Moscow Python Podcast
-      link: https://www.youtube.com/watch?v=DLgsB1yBeJQ
+      link: https://youtu.be/DLgsB1yBeJQ
     - title: Открытая дискуссия по архитектуре
       place: Frontend Live 2020
-      link: https://www.youtube.com/watch?v=0AxCqZUvOyg
+      link: https://youtu.be/0AxCqZUvOyg
     - title: 'Чем болеют большие фронтенды: монорепы и микрофронтенды'
       place: Frontend Live 2020
-      link: https://www.youtube.com/watch?v=P0UJ-nrSi34
+      link: https://youtu.be/P0UJ-nrSi34
     - title: Карусель на Vanilla.JS. Часть 2
       place: Хабр
       link: https://habr.com/ru/articles/327690/
