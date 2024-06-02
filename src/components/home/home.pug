@@ -7,10 +7,13 @@ mixin home
     +photo.home__photo
 
     .home__content
+      .tez
       h1.home__title= title
       h2.home__specialty(itemprop="jobTitle")= specialty
 
-      section.home__about(itemprop="knowsAbout")!= about
+      section.home__about(itemprop="knowsAbout")
+        each text in about
+          p!= text
 
       +contacts
       +speech

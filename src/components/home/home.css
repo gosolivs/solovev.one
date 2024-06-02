@@ -35,6 +35,10 @@
   text-wrap: balance;
 }
 
+.home__about p:nth-of-type(n + 2) {
+  padding-right: 4.5rem;
+}
+
 .home__photo {
   position: fixed;
   bottom: -40px;
@@ -96,6 +100,10 @@
     width: 100%;
     border-bottom: 1px solid rgba(var(--brand-color-rgb), 0.4);
     transform: none;
+  }
+
+  .home__about p:nth-of-type(n) {
+    padding: 0;
   }
 }
 
