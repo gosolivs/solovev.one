@@ -2,8 +2,8 @@
   "name": "solovev.one",
   "private": true,
   "scripts": {
-    "start": "parcel serve --no-cache src/index.pug",
-    "build": "parcel build --no-source-maps --no-cache --no-autoinstall --dist-dir ${OUTPUT_DIR} src/index.pug",
+    "start": "parcel serve --no-cache src/*.pug",
+    "build": "parcel build --no-source-maps --no-cache --no-autoinstall --dist-dir ${OUTPUT_DIR} src/*.pug",
     "lint:styles": "stylelint src/**/*.css",
     "spell": "yaspeller data.yml"
   },

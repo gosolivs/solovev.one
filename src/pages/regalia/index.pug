@@ -1,0 +1,23 @@
+include ../../components/photo/photo
+
+
+mixin regalia
+  main.home
+    .home__content
+      h1.home__title= title
+
+      h3.speech__title Экспертиза
+      ol.speech__list
+        each item in regalia.expertise
+          .speech__item
+            b= item.title
+            | : #{item.description}
+
+
+      br
+      h3.speech__title Спроектированные и реализованные проекты
+      ol.speech__list
+        each item in regalia.projects
+          .speech__item
+            b= item.title
+            | : #{item.description}
